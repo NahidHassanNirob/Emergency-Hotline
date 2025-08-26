@@ -13,7 +13,7 @@
   </head>
   <body class="bg-[#F5FFF6]">
     <!-- navbar -->
-    <nav class="flex justify-between max-w-[100vw] h- py-3 px-2 items-center bg-white">
+    <nav class="flex justify-between max-w-[100vw] h- py-3 px-2 items-center bg-white ">
       <div class="flex items-center">
         <img class="h-12" src="assets/logo.png" alt="" />
         <h2 class="ml-1 text-[#006747] font-bold lg:text-xl">Emergency<br />Service</h2>
@@ -24,11 +24,11 @@
           <img class="h-7 ml-[7px] " src="assets/heart.png" alt="" />
         </div>
         <div class="flex items-center bg-[#ECFFF0] mx-3 py-1 px-3 rounded-full">
-          <h2 class="font-bold text-[14px]">100</h2>
+          <h2 id="coins" class="font-bold text-[14px]">100</h2>
           <img class="h-7 ml-[7px] " src="assets/coin.png" alt="" />
         </div>
         <div class="py-1 px-3 rounded-full bg-[#00A63E] text-white">
-          <p><span class="font-bold text-[14px]">0</span> Copy</p>
+          <p><span id="copy-num" class="font-bold text-[14px]">0</span> Copy</p>
         </div>
       </div>
     </nav>
@@ -50,14 +50,14 @@
         <div class="p-3 bg-white shadow-md rounded-lg">
             <div class="flex items-center justify-between">
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/emergency.png" alt=""></div>
-                <i  class="fa-regular fa-heart hart"></i>
+                <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
             <h2 class="text-[13px] font-semibold mt-2 ">National Emergency Number</h2>
-            <p class="text-gray-500 text-xs">National Emergency</p>
-            <h2 class="text-[13px] font-semibold mt-2 mb-1">999</h2>
+            <p class="text-gray-500 text-xs services-name">National Emergency</p>
+            <h2  class="text-[13px] font-semibold mt-2 mb-1 services-num ">999</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >All</span> <br>
       
-                <button class="copy-btn mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy" style="color: #6b7280; "></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] border text-white py-1 px-5 rounded-lg text-[14px]  md:ml-3"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Call</button> 
+                <button class="copy-btn hover:bg-gray-600 hover:transition-all  hover:text-white hover:cursor-pointer mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy " style="color:inherit; "></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] text-white hover:bg-blue-700  hover:border-blue-700 hover:transition-all py-1 px-5 rounded-lg text-[14px] cursor-pointer md:ml-3 call"><i class="fa-solid fa-phone" style="color: inherit;"></i> Call</button> 
         
 
             
@@ -66,13 +66,13 @@
         <div class="p-3 bg-white shadow-md rounded-lg">
             <div class="flex items-center justify-between">
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/police.png" alt=""></div>
-                <i class="fa-regular fa-heart hart"></i>
+                <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
             <h2 class="text-[13px] font-semibold mt-2 ">Police Helpline Number</h2>
-            <p class="text-gray-500 text-xs">Police</p>
-            <h2 class="text-[13px] font-semibold mt-2 mb-1">999</h2>
+            <p class="text-gray-500 text-xs services-name">Police</p>
+            <h2 class="text-[13px] font-semibold mt-2 mb-1 services-num">999</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >Police</span> <br>
-            <button class=" copy-btn mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy" style="color: #6b7280;"></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] border text-white py-1 px-5 rounded-lg text-[14px] md:ml-3"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Call</button> 
+            <button class=" copy-btn  hover:bg-gray-600 hover:transition-all  hover:text-white hover:cursor-pointer mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy" style="color: inherit;"></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] border  hover:bg-blue-700  hover:border-blue-700 hover:transition-all cursor-pointer text-white py-1 px-5 rounded-lg text-[14px] md:ml-3  call"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Call</button> 
 
             
            
@@ -82,13 +82,13 @@
         <div class="p-3 bg-white shadow-md rounded-lg">
             <div class="flex items-center justify-between">
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/fire-service.png" alt=""></div>
-                <i class="fa-regular fa-heart hart"></i>
+                <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
             <h2 class="text-[13px] font-semibold mt-2 ">Fire Service Number</h2>
-            <p class="text-gray-500 text-xs">Fire Service</p>
-            <h2 class="text-[13px] font-semibold mt-2 mb-1">999</h2>
+            <p class="text-gray-500 text-xs services-name">Fire Service</p>
+            <h2 class="text-[13px] font-semibold mt-2 mb-1 services-num">999</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >Fire</span> <br>
-            <button class="copy-btn mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy" style="color: #6b7280;"></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] border text-white py-1 px-5 rounded-lg text-[14px] md:ml-3"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Call</button> 
+            <button class="copy-btn hover:bg-gray-600 hover:transition-all  hover:text-white hover:cursor-pointer mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy" style="color: inherit;"></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] border  hover:bg-blue-700  hover:border-blue-700 hover:transition-all cursor-pointer text-white py-1 px-5 rounded-lg text-[14px] md:ml-3  call"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Call</button> 
 
             
            
@@ -98,13 +98,13 @@
         <div class="p-3 bg-white shadow-md rounded-lg">
             <div class="flex items-center justify-between">
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/ambulance.png" alt=""></div>
-                <i class="fa-regular fa-heart hart"></i>
+                <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
             <h2 class="text-[13px] font-semibold mt-2 ">Ambulance Service</h2>
-            <p class="text-gray-500 text-xs">Ambulance</p>
-            <h2 class="text-[13px] font-semibold mt-2 mb-1">1994-999999</h2>
+            <p class="text-gray-500 text-xs services-name">Ambulance</p>
+            <h2 class="text-[13px] font-semibold mt-2 mb-1 services-num">1994-999999</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >Health</span> <br>
-            <button class=" copy-btn mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy" style="color: #6b7280;"></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] border text-white py-1 px-5 rounded-lg text-[14px] md:ml-3"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Call</button> 
+            <button class=" copy-btn hover:bg-gray-600 hover:transition-all  hover:text-white hover:cursor-pointer mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy" style="color: inherit;"></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] border  hover:bg-blue-700  hover:border-blue-700 hover:transition-all cursor-pointer text-white py-1 px-5 rounded-lg text-[14px] md:ml-3  call"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Call</button> 
 
             
            
@@ -114,13 +114,13 @@
         <div class="p-3 bg-white shadow-md rounded-lg">
             <div class="flex items-center justify-between">
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/emergency.png" alt=""></div>
-                <i class="fa-regular fa-heart hart"></i>
+                <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
             <h2 class="text-[13px] font-semibold mt-2 ">Women & Child Helpline</h2>
-            <p class="text-gray-500 text-xs">Women & Child Helpline</p>
-            <h2 class="text-[13px] font-semibold mt-2 mb-1">199</h2>
+            <p class="text-gray-500 text-xs services-name">Women & Child Helpline</p>
+            <h2 class="text-[13px] font-semibold mt-2 mb-1 services-num">199</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >Help</span> <br>
-            <button class=" copy-btn mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy" style="color: #6b7280;"></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] border text-white py-1 px-5 rounded-lg text-[14px] md:ml-3"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Call</button> 
+            <button class=" copy-btn hover:bg-gray-600 hover:transition-all  hover:text-white hover:cursor-pointer mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy" style="color: inherit;"></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] border  hover:bg-blue-700  hover:border-blue-700 hover:transition-all cursor-pointer text-white py-1 px-5 rounded-lg text-[14px] md:ml-3  call"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Call</button> 
 
             
            
@@ -130,13 +130,13 @@
         <div class="p-3 bg-white shadow-md rounded-lg">
             <div class="flex items-center justify-between">
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/emergency.png" alt=""></div>
-                <i class="fa-regular fa-heart hart"></i>
+                <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
             <h2 class="text-[13px] font-semibold mt-2 ">Anti-Corruption Helpline</h2>
-            <p class="text-gray-500 text-xs">Anti-Corruption</p>
-            <h2 class="text-[13px] font-semibold mt-2 mb-1">106</h2>
+            <p class="text-gray-500 text-xs services-name">Anti-Corruption</p>
+            <h2 class="text-[13px] font-semibold mt-2 mb-1 services-num">106</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >Govt</span> <br>
-            <button class=" copy-btn mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy" style="color: #6b7280;"></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] border text-white py-1 px-5 rounded-lg text-[14px] md:ml-3"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Call</button> 
+            <button class=" copy-btn hover:bg-gray-600 hover:transition-all  hover:text-white hover:cursor-pointer mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy" style="color: inherit;"></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] border  hover:bg-blue-700  hover:border-blue-700 hover:transition-all cursor-pointer text-white py-1 px-5 rounded-lg text-[14px] md:ml-3  call"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Call</button> 
 
             
            
@@ -145,13 +145,13 @@
         <div class="p-3 bg-white shadow-md rounded-lg">
             <div class="flex items-center justify-between">
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/emergency.png" alt=""></div>
-                <i class="fa-regular fa-heart hart"></i>
+                <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
             <h2 class="text-[13px] font-semibold mt-2 ">Electricity Helpline</h2>
-            <p class="text-gray-500 text-xs">Electricity Outage</p>
-            <h2 class="text-[13px] font-semibold mt-2 mb-1">16216</h2>
+            <p class="text-gray-500 text-xs services-name">Electricity Outage</p>
+            <h2 class="text-[13px] font-semibold mt-2 mb-1 services-num">16216</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >Electricity</span> <br>
-            <button class="copy-btn mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy" style="color: #6b7280;"></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] border text-white py-1 px-5 rounded-lg text-[14px] md:ml-3"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Call</button> 
+            <button class="copy-btn hover:bg-gray-600 hover:transition-all  hover:text-white hover:cursor-pointer mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy" style="color: inherit;"></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] border  hover:bg-blue-700  hover:border-blue-700 hover:transition-all cursor-pointer text-white py-1 px-5 rounded-lg text-[14px] md:ml-3  call"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Call</button> 
 
             
            
@@ -161,13 +161,13 @@
         <div class="p-3 bg-white shadow-md rounded-lg">
             <div class="flex items-center justify-between">
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/brac.png" alt=""></div>
-                <i class="fa-regular fa-heart hart"></i>
+                <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
             <h2 class="text-[13px] font-semibold mt-2 ">Brac Helpline</h2>
-            <p class="text-gray-500 text-xs">Brac</p>
-            <h2 class="text-[13px] font-semibold mt-2 mb-1">16445</h2>
+            <p class="text-gray-500 text-xs services-name">Brac</p>
+            <h2 class="text-[13px] font-semibold mt-2 mb-1 services-num">16445</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >NGO</span> <br>
-            <button class="copy-btn mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy" style="color: #6b7280;"></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] border text-white py-1 px-5 rounded-lg text-[14px] md:ml-3"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Call</button> 
+            <button class="copy-btn hover:bg-gray-600 hover:transition-all  hover:text-white hover:cursor-pointer mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy" style="color: inherit;"></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] border  hover:bg-blue-700  hover:border-blue-700 hover:transition-all cursor-pointer text-white py-1 px-5 rounded-lg text-[14px] md:ml-3  call"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Call</button> 
 
             
            
@@ -177,13 +177,13 @@
         <div class="p-3 bg-white shadow-md rounded-lg">
             <div class="flex items-center justify-between">
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/Bangladesh-Railway.png" alt=""></div>
-                <i class="fa-regular fa-heart hart"></i>
+                <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
             <h2 class="text-[13px] font-semibold mt-2 ">Bangladesh Railway Helpline </h2>
-            <p class="text-gray-500 text-xs">Bangladesh Railway</p>
-            <h2 class="text-[13px] font-semibold mt-2 mb-1">163</h2>
+            <p class="text-gray-500 text-xs services-name">Bangladesh Railway</p>
+            <h2 class="text-[13px] font-semibold mt-2 mb-1 services-num">163</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >Travel</span> <br>
-            <button class="copy-btn mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy" style="color: #6b7280;"></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] border text-white py-1 px-5 rounded-lg text-[14px] md:ml-3"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Call</button> 
+            <button class="copy-btn hover:bg-gray-600 hover:transition-all  hover:text-white hover:cursor-pointer mt-3 rounded-lg text-gray-500 border-gray-500 border py-1 px-4 text-[14px]"><i class="fa-solid fa-copy" style="color: inherit;"></i> Copy</button> <button class="bg-[#00A63E] border-[#00A63E] border  hover:bg-blue-700  hover:border-blue-700 hover:transition-all cursor-pointer text-white py-1 px-5 rounded-lg text-[14px] md:ml-3  call"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Call</button> 
 
             
            
@@ -196,11 +196,11 @@
       </div>
       <!-- right sidebar -->
       <div>
-        <div class="flex justify-between items-center">
+        <!-- <div class="flex justify-between items-center">
 
            <h2> <span><i class="fa-regular fa-clock" style="color: #909295;"></i></span> Call History</h2>
            <h2 class="bg-[#00A63E] text-white py-1 px-4 rounded-full">Clear</h2>
-        </div>
+        </div> -->
        
 
       </div>
