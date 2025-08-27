@@ -65,10 +65,10 @@ for (const calls of callFunc) {
       const div = document.createElement("div");
       div.innerHTML = `
       
-          <div id='div' class="flex justify-between items-center px-3 mb-3">
+          <div id='div' class="flex justify-between items-center  mb-3">
             
             <div class="">
-              <h2 class="font-bold text-[14px]">${value.name}</h2>
+              <h2 class="font-bold text-[13px]">${value.name}</h2>
               <p class="font-semibold text-xs text-gray-500">${value.num}</p>
             </div>
             <p class="text-xs">${value.date}</p>
