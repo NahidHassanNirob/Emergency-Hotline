@@ -8,12 +8,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- FONT AWESOME CDN -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- CSS FILE -->
-    <link rel="stylesheet" href="style.css" />
+    
   </head>
   <body class="bg-[#F5FFF6]">
     <!-- navbar -->
-    <nav class="flex justify-between max-w-[100vw] h- py-3 px-2 items-center bg-white ">
+    <nav class=" max-w-lg mx-auto flex justify-between  h- py-3 px-2 items-center bg-white ">
       <div class="flex items-center">
         <img class="h-12" src="assets/logo.png" alt="" />
         <h2 class="ml-1 text-[#006747] font-bold lg:text-xl">Emergency<br />Service</h2>
@@ -34,7 +33,7 @@
     </nav>
 
     <!--Banner section  -->
-    <div class=" text-center px-2  py-3 text-white bg-[linear-gradient(90deg,#013223_0%,#006747_49.99%,#013223_100%)]">
+    <div class=" max-w-lg mx-auto  text-center px-2  py-3 text-white bg-[linear-gradient(90deg,#013223_0%,#006747_49.99%,#013223_100%)]">
         
             <img class="mx-auto h-20" src="assets/logo.png" alt="">
         <h2 class="text-3xl font-bold">Emergency Service Directory</h2>
@@ -45,14 +44,29 @@
     <!-- Main Section -->
 
     <section >
+      <!-- right sidebar -->
+      <div id="parent-div" class="max-w-lg mx-auto mt-3  p-2">
+        <div class="flex justify-between items-center bg-white p-2 rounded-t-md">
+
+           <h2 class="text-[14px]"> <span><i class="fa-regular fa-clock" style="color: #909295;"></i></span> Call History</h2>
+           <h2 id="clear" class="bg-[#00A63E] text-white py-1 px-4 rounded-full text-[14px] cursor-pointer hover:bg-blue-700 hover:transition-all">Clear</h2>
+        </div>
+        <div id="history-container" class="max-w-lg mx-auto  p-2 bg-white rounded-b-md ">
+
+        </div>
+
+        
+      </div>
+
+
       <!-- left frame -->
-      <div class="max-w-[100vw] px-2 mt-3 grid grid-cols-2 gap-2 lg:grid-cols-3 md:grid-cols-3">
+      <div class="max-w-lg mx-auto px-2 mt-3 grid grid-cols-2 gap-2  ">
         <div class="p-3 bg-white shadow-md rounded-lg">
             <div class="flex items-center justify-between">
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/emergency.png" alt=""></div>
                 <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
-            <h2 class="text-[13px] font-semibold mt-2 ">National Emergency Number</h2>
+            <h2 class="text-[13px] font-semibold mt-2 callServices ">National Emergency Number</h2>
             <p class="text-gray-500 text-xs services-name">National Emergency</p>
             <h2  class="text-[13px] font-semibold mt-2 mb-1 services-num ">999</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >All</span> <br>
@@ -68,7 +82,7 @@
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/police.png" alt=""></div>
                 <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
-            <h2 class="text-[13px] font-semibold mt-2 ">Police Helpline Number</h2>
+            <h2 class="text-[13px] font-semibold mt-2 callServices ">Police Helpline Number</h2>
             <p class="text-gray-500 text-xs services-name">Police</p>
             <h2 class="text-[13px] font-semibold mt-2 mb-1 services-num">999</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >Police</span> <br>
@@ -84,7 +98,7 @@
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/fire-service.png" alt=""></div>
                 <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
-            <h2 class="text-[13px] font-semibold mt-2 ">Fire Service Number</h2>
+            <h2 class="text-[13px] font-semibold mt-2 callServices ">Fire Service Number</h2>
             <p class="text-gray-500 text-xs services-name">Fire Service</p>
             <h2 class="text-[13px] font-semibold mt-2 mb-1 services-num">999</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >Fire</span> <br>
@@ -100,7 +114,7 @@
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/ambulance.png" alt=""></div>
                 <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
-            <h2 class="text-[13px] font-semibold mt-2 ">Ambulance Service</h2>
+            <h2 class="text-[13px] font-semibold mt-2 callServices ">Ambulance Service</h2>
             <p class="text-gray-500 text-xs services-name">Ambulance</p>
             <h2 class="text-[13px] font-semibold mt-2 mb-1 services-num">1994-999999</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >Health</span> <br>
@@ -116,7 +130,7 @@
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/emergency.png" alt=""></div>
                 <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
-            <h2 class="text-[13px] font-semibold mt-2 ">Women & Child Helpline</h2>
+            <h2 class="text-[13px] font-semibold mt-2 callServices ">Women & Child Helpline</h2>
             <p class="text-gray-500 text-xs services-name">Women & Child Helpline</p>
             <h2 class="text-[13px] font-semibold mt-2 mb-1 services-num">199</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >Help</span> <br>
@@ -132,7 +146,7 @@
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/emergency.png" alt=""></div>
                 <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
-            <h2 class="text-[13px] font-semibold mt-2 ">Anti-Corruption Helpline</h2>
+            <h2 class="text-[13px] font-semibold mt-2 callServices ">Anti-Corruption Helpline</h2>
             <p class="text-gray-500 text-xs services-name">Anti-Corruption</p>
             <h2 class="text-[13px] font-semibold mt-2 mb-1 services-num">106</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >Govt</span> <br>
@@ -147,7 +161,7 @@
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/emergency.png" alt=""></div>
                 <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
-            <h2 class="text-[13px] font-semibold mt-2 ">Electricity Helpline</h2>
+            <h2 class="text-[13px] font-semibold mt-2 callServices ">Electricity Helpline</h2>
             <p class="text-gray-500 text-xs services-name">Electricity Outage</p>
             <h2 class="text-[13px] font-semibold mt-2 mb-1 services-num">16216</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >Electricity</span> <br>
@@ -163,7 +177,7 @@
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/brac.png" alt=""></div>
                 <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
-            <h2 class="text-[13px] font-semibold mt-2 ">Brac Helpline</h2>
+            <h2 class="text-[13px] font-semibold mt-2 callServices ">Brac Helpline</h2>
             <p class="text-gray-500 text-xs services-name">Brac</p>
             <h2 class="text-[13px] font-semibold mt-2 mb-1 services-num">16445</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >NGO</span> <br>
@@ -179,7 +193,7 @@
                 <div class="p-[10px] bg-[#FFE3E1] rounded-2xl flex justify-center items-center"><img class="h-8" src="assets/Bangladesh-Railway.png" alt=""></div>
                 <i class="fa-regular fa-heart hart cursor-pointer"></i>
             </div>
-            <h2 class="text-[13px] font-semibold mt-2 ">Bangladesh Railway Helpline </h2>
+            <h2 class="text-[13px] font-semibold mt-2 callServices ">Bangladesh Railway Helpline </h2>
             <p class="text-gray-500 text-xs services-name">Bangladesh Railway</p>
             <h2 class="text-[13px] font-semibold mt-2 mb-1 services-num">163</h2>
             <span class="text-gray-500 text-xs bg-[#ECFFF0] p-2 rounded-full " >Travel</span> <br>
@@ -194,16 +208,7 @@
 
         
       </div>
-      <!-- right sidebar -->
-      <div>
-        <!-- <div class="flex justify-between items-center">
-
-           <h2> <span><i class="fa-regular fa-clock" style="color: #909295;"></i></span> Call History</h2>
-           <h2 class="bg-[#00A63E] text-white py-1 px-4 rounded-full">Clear</h2>
-        </div> -->
-       
-
-      </div>
+      
     </section>
 
     <!-- JAVA SCRIPT FILE -->
