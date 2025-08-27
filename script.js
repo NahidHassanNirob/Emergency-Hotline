@@ -44,11 +44,11 @@ for (const calls of callFunc) {
     const coinValue = strToNum("coins");
     if (coinValue < 20) {
       alert(
-        "  You don't have enough coins.You need at least 20 coins to make a call"
+        "❌You don't have enough coins.You need at least 20 coins to make a call"
       );
       return;
     }
-    alert(`calling ${serviceName} ${serviceNum}...`);
+    alert(`📞 calling ${serviceName} ${serviceNum}...`);
     const tottalCoin = coinValue - 20;
     document.getElementById("coins").innerText = tottalCoin;
 
@@ -65,13 +65,13 @@ for (const calls of callFunc) {
       const div = document.createElement("div");
       div.innerHTML = `
       
-          <div id='div' class="flex gap-1 justify-between items-center  mb-3">
+          <div  class="flex gap-1 justify-between items-center bg-[#F2F4F6] p-2 rounded-md  mb-2">
             
             <div class="">
-              <h2 class=" italic text-xs">${value.name}</h2>
+              <h2 class=" italic text-xs ">${value.name}</h2>
               <p class="italic text-xs text-gray-500">${value.num}</p>
             </div>
-            <p class="text-xs italic">${value.date}</p>
+            <p class="text-xs italic ">${value.date}</p>
           </div>
 
         
