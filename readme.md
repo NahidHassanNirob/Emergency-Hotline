@@ -1,7 +1,7 @@
 ### 6. Answer the following questions clearly:
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-   **ans**
+   ans:
    #. getElementById
    এটা দিয়ে দিয়ে নির্দিষ্ট ID দেওয়া element কে পাওয়া যায়। এটি দিয়ে সবসময় মাত্র একটি element পাওয়া যায়।
 
