@@ -1,4 +1,4 @@
-### 6. Answer the following questions clearly:
+### Answer the following questions clearly:
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
    ans:
@@ -47,7 +47,7 @@
 4. What is **Event Delegation** in JavaScript? Why is it useful?
    ans: Event Delegation means working by placing a listener on their parent element, rather than placing separate event listeners on smaller elements.
 
-   If a new element is added to the DOM later, there is no need to set a separate event. The event listener on the parent element will also catch the event for that new element. 
+   If a new element is added to the DOM later, there is no need to set a separate event. The event listener on the parent element will also catch the event for that new element.
    It doesn't require setting up separate events for every small element, so it takes less time and uses less memory.
    Writing the code this way makes it nice and clean.
 
