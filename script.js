@@ -1,13 +1,12 @@
-// string to number convert
+// string to number convert function
 function strToNum(id) {
   return parseInt(document.getElementById(id).innerText);
 }
 
-// copy button function 
+// copy button function
 const copyButtons = document.querySelectorAll(".copy-btn");
 copyButtons.forEach(function (copyButton) {
   copyButton.addEventListener("click", function () {
-    
     const parentCard = copyButton.parentElement.parentElement;
 
     const number = parentCard.querySelector(".services-num").innerText;
@@ -28,13 +27,12 @@ for (const hart of allHart) {
   });
 }
 
-// call function 
+// call function
 const callButtons = document.querySelectorAll(".call");
 const callData = [];
 
 callButtons.forEach(function (callBtn) {
   callBtn.addEventListener("click", function () {
-    
     const parentDiv = callBtn.parentElement.parentElement;
 
     const serviceName = parentDiv.querySelector(".services-name").innerText;
@@ -43,7 +41,9 @@ callButtons.forEach(function (callBtn) {
     const coinValue = strToNum("coins");
 
     if (coinValue < 20) {
-      alert("❌💰 You don't have enough coins. You need at least 20 coins to make a call");
+      alert(
+        "❌💰 You don't have enough coins. You need at least 20 coins to make a call"
+      );
       return;
     }
 
